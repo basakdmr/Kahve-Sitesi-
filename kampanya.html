@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kahve Kampanyası</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <style>
+        .kampanya {
+            font-family: Arial, sans-serif;
+            background-color: burlywood;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            color: black;
+            margin-top: 5%;
+            margin-bottom: 8%;
+        }
+
+        .kampanya img {
+            border: 3px solid blanchedalmond;
+            display: inline-block;
+        }
+
+        .kampanya img:hover {
+            border: 3px solid brown;
+            display: inline-block;
+            opacity: 0.8;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="urunler.html">Ürünler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galery.html">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletisim</a>
+                    </li>
+                </ul>
+                <div class="header-icon">
+                    <a href="urunler.html"><i class='bx bx-cart-alt' title="sepete ekle"></i></a>
+                    <a href="giris.html"><i class='bx bxs-user' title="giris yap"></i></a>
+                    <a href="kampanya.html"><i class='bx bxs-gift' title="kampanya"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="rapor"></div>
+    <div class="kampanya">
+        <h1>Kahve Kampanyası!</h1>
+        <h5>Kahve kampanyasından faydalanmak için lütfen aşağıdaki anketteki sorulara doğru cevap veriniz.</h5>
+        <form name="formTest">
+            <fieldset class="radiogroup">
+                <legend>Soru 1: Türk mutfağının meşhur bir kahve içeceği vardır. Bu içeceğin adı nedir?</legend>
+                <ul class="radio" style="list-style:none">
+                    <li>A) <input type="radio" name="q1" value="A" /><label>Latte</label></li>
+                    <li>B) <input type="radio" name="q1" value="B" /><label>Espresso</label></li>
+                    <li>C) <input type="radio" name="q1" value="C" /><label>Mocha</label></li>
+                    <li>D) <input type="radio" name="q1" value="D" /><label>Türk Kahvesi</label></li>
+                </ul>
+            </fieldset>
+
+            <fieldset class="radiogroup">
+                <legend>Soru 2: Türkiyenin başkenti neresidir?</legend>
+                <ul class="radio" style="list-style:none">
+                    <li>A) <input type="radio" name="q2" value="A" /><label>İstanbul</label></li>
+                    <li>B) <input type="radio" name="q2" value="B" /><label>Ankara</label></li>
+                    <li>C) <input type="radio" name="q2" value="C" /><label>İzmir</label></li>
+                    <li>C) <input type="radio" name="q2" value="C" /><label>Bursa</label></li>
+                </ul>
+            </fieldset>
+            <fieldset class="radiogroup">
+                <legend>Soru 3: Türkiye'de kullanılan resmi para birimi nedir?</legend>
+                <ul class="radio" style="list-style:none">
+                    <li>A) <input type="radio" name="q3" value="A" /><label>Lira</label></li>
+                    <li>B) <input type="radio" name="q3" value="B" /><label>Euro</label></li>
+                    <li>B) <input type="radio" name="q3" value="B" /><label>Dolar</label></li>
+                    <li>B) <input type="radio" name="q3" value="B" /><label>Riyal</label></li>
+                </ul>
+            </fieldset>
+            <input id="userEmail" type="email" placeholder="Email adresinizi giriniz."
+                style="width: 300px; height: 32px; border-radius: 16px;text-align: center;" required>
+            <input type="button" value="Cevapla" onclick="checkAnswer()"
+                style="width: 100px;height: 32px;border-radius: 8px; background-color: yellow;" />
+        </form>
+        <div id="kampanya" style="display: none;">
+            <img src="img/istockphoto-616891160-612x612.jpg" alt="Kahve Kampanyası" style="margin-top: 10px; height: 300px;width: 300px;">
+            <h1>Özel indirimle: Bugün alacağınız her 2 kahve için 1 kahve bedava! </h1>
+            <p>1 - 31 Aralık 2023 tarihleri arasında geçerlidir.</p>
+            <h1>Fırsatı Kaçırma!</h1>
+    
+            <h3>Nasıl Yararlanabilirsiniz?</h3>
+            <p>Mağazalarımıza gelerek veya online sipariş vererek kampanyadan faydalanabilirsiniz.</p>
+            <a href="urunler.html">Detaylar için tıklayın</a>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>&#169; Hazırlayan Başak Demir</p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/kampanya.js"></script>
+</body>
+
+</html>

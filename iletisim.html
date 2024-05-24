@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kahve</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#about">Hakkımızda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="urunler.html">Ürünler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galery.html">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="iletisim.html">İletisim</a>
+          </li>
+        </ul>
+        <div class="header-icon">
+          <a href="giris.html"><i class='bx bxs-user' title="giris yap"></i></a>
+          <a href="kampanya.html"><i class='bx bxs-gift' title="kampanya"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div style="background-image: url(./img/bg.png); padding-bottom: 5%;padding-top: 5%;">
+    <h2 style="text-align: center;color: gray;margin-bottom: 25px">Mesaj Göndermek İstiyorum</h2>
+    <div class="form-card card-register mx-auto mt-4" style="width: 35%;">
+      <div class="card-body">
+        <form name="uye_formu" method="post" onsubmit="return YorumKontrol(this)">
+          <div class="form-group">
+            <label>Adı</label>
+            <input type="text" name="adi" placeholder="Adınızı Giriniz" class="form-control" autocomplete="off">
+            <p id="adikontrol"></p>
+          </div>
+          <div class="form-group">
+            <label>Soyadı</label>
+            <input type="text" name="soyadi" placeholder="Soyadınızı Giriniz" class="form-control" autocomplete="off">
+            <p id="soyadikontrol"></p>
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="mail" name="email" placeholder="Mail Adresi" class="form-control" autocomplete="off">
+            <p id="emailkontrol"></p>
+          </div>
+          <div class="form-group">
+            <label>Message:</label>
+            <textarea rows="10" cols="100" class="form-control" id="message" name="mesaj"></textarea>
+            <p id="mesajkontrol"></p>
+          </div>
+          <input type="submit" name="uyeekle" style="float: right;" class="btn btn-info " value="Gönder">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&#169; Hazırlayan Başak Demir</p>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/formKontrol.js"></script>
+</body>
+
+</html>

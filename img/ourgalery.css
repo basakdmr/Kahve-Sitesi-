@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Merienda:wght@500;600&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+*{
+    font-family: 'Merienda', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    background-color: bisque;
+}
+.gallery .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,30rem);
+    gap: 2rem;
+    justify-content: center;
+    
+}
+.gallery .box-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 10px;      
+}
+.gallery .box-container img:hover{
+    opacity: 0.5;
+    background-color: gray;
+}
+
+

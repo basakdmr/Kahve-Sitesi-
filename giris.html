@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahve</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="urunler.html">Ürünler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galery.html">Galeri</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="iletisim.html">İletisim</a>
+              </li>
+            </ul>
+            <div class="header-icon">
+              <a href="giris.html"><i class='bx bxs-user' title="giris yap"></i></a>
+              <a href="kampanya.html"><i class='bx bxs-gift' title="kampanya"></i></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div style="background-image: url(./img/bg.png); padding-bottom: 5%;padding-top: 5%;height: 920px;">
+        <h2 style="text-align: center;color: gray;margin-bottom: 25px">Giriş</h2>
+        <div class="form-card card-register mx-auto mt-4" style="width: 35%;">
+          <div class="card-body">
+            <form action="" method="POST" name="Giris">
+              <div class="form-group">
+                <label>Kullanıcı Adı</label>
+                <input type="text" name="kadi" placeholder="Kullanıcı Adı" class="form-control" autocomplete="off">
+              </div>
+              <div class="form-group">
+                <label>Şifre</label>
+                <input type="password" name="sifre" placeholder="Şifre" class="form-control" autocomplete="off">
+              </div>
+              <label for="lname">
+                <a href="uyeol.html" style="color:green;padding-top: 10px;">
+                    Üye olmak için tıklayınz.
+                </a>
+            </label>
+              <input type="submit" value="Giriş" style="width: 200px;margin-top: 10px;" onclick="GirisKontrol()">
+            </form>
+          </div>
+        </div>
+      </div>
+    <div class="copyright">
+        <p>&#169; Hazırlayan Başak Demir</p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/formKontrol.js"></script>
+</body>
+
+</html>

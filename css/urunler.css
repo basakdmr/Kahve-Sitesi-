@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+.shop{
+    background-color:#333333;
+    width: 100%;
+}
+.shop .shop-header{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content:space-between
+}
+.shop-header h1{
+    color: orange;
+    padding: 10px 30px;
+    margin-top: 20px;    
+}
+
+.shop-header h2{
+    color: orange;
+    padding: 10px 20px; 
+    margin-top: 50px;   
+}
+.shop-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #404040;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+.shop-box .card {
+    width: 280px;
+    margin: 20px;
+}
+
+.shop-box .card-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.shop-box .card-image img:hover {
+    transform: scale(1.1);
+    transition: transform .4s ease-in-out;
+}
+
+.shop-box .card-body {
+    padding: 20px;
+    border: 3px solid #3B3B3B;
+}
+
+.shop-box .card-body h3 {
+    padding: 10px 0;
+}
+
+.shop-box .card-body i {
+    color: yellow;
+    font-size: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+.shop-box .card-body .cash {
+    font-size: 22px;
+    margin-left: 90px;
+}
+.shop-box .card-body  .content a{
+    padding: 0 1rem;
+    color:orange;
+    border: 2px solid burlywood; 
+    border-radius: 4px;
+  text-transform: uppercase; 
+}
+.shop-box .card-body .content a:hover{
+    background: bisque;
+   color:black ;
+   transition: 0.2s all linear; 
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {display:none;}
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+    content: attr(data-on);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .shopSepetEkleBtn{
+    background: bisque;
+    color: black;
+    transition: 0.2s all linear;
+    border: none;
+    height: 32px;
+    width: 200px;
+  }
